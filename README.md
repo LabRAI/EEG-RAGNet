@@ -36,22 +36,8 @@ Unlike existing graph learning-based EEG seizure detection methods, EEG-RAGNet i
 │   ├── dataloader_detection_LLM.py
 │   ├── dataloader_prediction.py
 │   ├── electrode_graph
-│   │   ├── adj_mx_3d.pkl
-│   │   └── distances_3d.csv
 │   ├── file_markers_detection
-│   │   ├── balanced_trainSet_seq2seq_12s.txt
-│   │   ├── balanced_trainSet_seq2seq_60s.txt
-│   │   ├── devSet_seq2seq_12s_nosz.txt
-│   │   ├── devSet_seq2seq_12s_sz.txt
-│   │   ├── ......
-│   │   ├── ......
 │   ├── file_markers_prediction
-│   │   ├── devSet_seq2seq_12s.txt
-│   │   ├── devSet_seq2seq_60s.txt
-│   │   ├── testSet_seq2seq_12s.txt
-│   │   ├── testSet_seq2seq_60s.txt
-│   │   ├── trainSet_seq2seq_12s.txt
-│   │   └── trainSet_seq2seq_60s.txt
 │   ├── preprocess_detection.py
 │   ├── preprocess_prediction.py
 │   └── resample_signals.py
@@ -59,17 +45,6 @@ Unlike existing graph learning-based EEG seizure detection methods, EEG-RAGNet i
 ├── label.txt
 ├── main.py
 ├── model
-│   ├── BIOT.py
-│   ├── DCRNN.py
-│   ├── EGCN.py
-│   ├── ......
-│   ├── ......
-│   ├── cnnlstm.py
-│   ├── dense_inception
-│   │   ├── basic_conv.py
-│   │   ├── dense_inception.py
-│   │   ├── inceptions.py
-│   │   └── params.json
 │   ├── eeg_ragnet
 │   │   ├── __init__.py
 │   │   ├── eeg_ragnet.py
@@ -77,6 +52,13 @@ Unlike existing graph learning-based EEG seizure detection methods, EEG-RAGNet i
 │   │   ├── graph_refiner.py
 │   │   ├── knowledge_base.py
 │   │   └── semantic_query.py
+│   ├── dense_inception
+│   ├── BIOT.py
+│   ├── DCRNN.py
+│   ├── EGCN.py
+│   ├── EvoBrain.py
+│   ├── cell.py
+│   ├── cnnlstm.py
 │   ├── graph_constructor.py
 │   ├── loss.py
 │   └── lstm.py
