@@ -21,26 +21,50 @@ Unlike existing graph learning-based EEG seizure detection methods, EEG-RAGNet i
 ## 🧩 Repository Structure
 
 ```
-EEG-RAGNet-main/
-├── model/
-│ ├── eeg_ragnet/
-│ │ ├── knowledge_base.py # Build biomedical knowledge base & triplets
-│ │ ├── semantic_query.py # Map EEG features into semantic query space
-│ │ ├── faiss_retriever.py # FAISS-based knowledge retrieval
-│ │ ├── graph_refiner.py # Graph refinement via knowledge fusion
-│ │ └── eeg_ragnet.py # Integrated EEG-RAGNet module
-│ ├── ...
-│
-├── data/
-│ ├── dataloader_detection.py # EEG data loading pipeline
-│ ├── dataloader_detection_LLM.py
-│ └── file_markers_detection/ # Dataset label annotations
-│
-├── processed_data/ # Pre-processed EEG .h5 files (used for training)
-│
-├── main.py # Training & evaluation script
-├── args.py # All hyperparameters and RAGNet options
-└── README.md
+.
+├── EEG_Files_name.txt
+├── LICENSE
+├── README.md
+├── args.py
+├── assign_label_tags.py
+├── constants.py
+├── data
+│   ├── __pycache__
+│   ├── clip_resample_signals.py
+│   ├── constants.py
+│   ├── data_utils.py
+│   ├── dataloader_chb.py
+│   ├── dataloader_detection.py
+│   ├── dataloader_detection_LLM.py
+│   ├── dataloader_prediction.py
+│   ├── electrode_graph
+│   ├── file_markers_detection
+│   ├── file_markers_prediction
+│   ├── preprocess_detection.py
+│   ├── preprocess_prediction.py
+│   └── resample_signals.py
+├── knowledge.json
+├── label.txt
+├── main.py
+├── model
+│   ├── BIOT.py
+│   ├── DCRNN.py
+│   ├── EGCN.py
+│   ├── EvoBrain.py
+│   ├── cell.py
+│   ├── cnnlstm.py
+│   ├── dense_inception
+│   ├── eeg_ragnet
+│   ├── graph_constructor.py
+│   ├── loss.py
+│   └── lstm.py
+├── processed_data
+│   ├── 00000906_s007_t000.h5
+│   ├── 00000906_s007_t002.h5
+│   ├── 00000906_s007_t003.h5
+│   └── How_to_Access_TUSZ_dataset.md
+├── requirements.txt
+└── utils.py
 ```
 
 
