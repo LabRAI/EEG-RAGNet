@@ -33,7 +33,6 @@ Unlike existing graph learning-based EEG seizure detection methods, EEG-RAGNet i
 │   ├── data_utils.py
 │   ├── dataloader_chb.py
 │   ├── dataloader_detection.py
-│   ├── dataloader_detection_LLM.py
 │   ├── dataloader_prediction.py
 │   ├── electrode_graph
 │   ├── file_markers_detection
